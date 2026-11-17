@@ -178,37 +178,18 @@ dialog:focus-visible {
 
 .wordmark {
   display: inline-flex;
-  min-width: 190px;
+  width: 190px;
+  flex: 0 0 190px;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
-.wordmark-symbol {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 1px solid var(--gold);
-  color: var(--gold-bright);
-  font-family: var(--display);
-  font-size: 1.65rem;
-  line-height: 1;
-}
-
-.wordmark-text {
-  display: grid;
-  gap: 0;
-  font-family: var(--display);
-  font-size: 1.38rem;
-  letter-spacing: 0.035em;
-  line-height: 0.8;
-}
-
-.wordmark-text span:last-child {
-  color: var(--gold-bright);
-  font-size: 0.82em;
-  letter-spacing: 0.16em;
+.wordmark-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: screen;
 }
 
 .primary-navigation {
@@ -1425,7 +1406,8 @@ body.custom-cursor-enabled textarea {
   }
 
   .wordmark {
-    min-width: 165px;
+    width: 170px;
+    flex-basis: 170px;
   }
 
   .hero-main {
@@ -1578,17 +1560,8 @@ body.custom-cursor-enabled textarea {
   }
 
   .wordmark {
-    min-width: 0;
-  }
-
-  .wordmark-symbol {
-    width: 33px;
-    height: 33px;
-    font-size: 1.5rem;
-  }
-
-  .wordmark-text {
-    font-size: 1.28rem;
+    width: 145px;
+    flex-basis: 145px;
   }
 
   .hero-main {
@@ -1951,6 +1924,11 @@ body.custom-cursor-enabled textarea {
 @media (max-width: 390px) {
   :root {
     --page-gutter: 19px;
+  }
+
+  .wordmark {
+    width: 136px;
+    flex-basis: 136px;
   }
 
   .hero-copy h1 {

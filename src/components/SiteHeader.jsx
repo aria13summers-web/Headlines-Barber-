@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { business } from '../data/business.js';
+import logo from '../assets/images/headlines-barber-logo.png';
 import Icon from './Icon.jsx';
 
 const links = [
@@ -34,12 +34,8 @@ export default function SiteHeader() {
   return (
     <div className="header-shell">
       <div className="site-header-inner">
-        <a className="wordmark" href="#home" aria-label={`${business.name}, home`} onClick={closeMenu}>
-          <span className="wordmark-symbol" aria-hidden="true">H</span>
-          <span className="wordmark-text">
-            <span>Headlines</span>
-            <span>Barber</span>
-          </span>
+        <a className="wordmark" href="#home" onClick={closeMenu}>
+          <img className="wordmark-logo" src={logo} alt="Headlines Barber" />
         </a>
         <button
           ref={menuButtonRef}
