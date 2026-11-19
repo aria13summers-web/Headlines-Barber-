@@ -4,6 +4,7 @@ import Icon from './Icon.jsx';
 
 export default function GallerySection() {
   const [activeImage, setActiveImage] = useState(null);
+  const [comparisonPosition, setComparisonPosition] = useState(50);
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -21,8 +22,57 @@ export default function GallerySection() {
           <h2 id="gallery-title">The work<br /><em>speaks.</em></h2>
         </div>
         <p className="section-intro">
-          A few frames from the world of grooming. Replace these editorial images with your own cuts and shop photos.
+          A few frames from the world of grooming.
         </p>
+      </div>
+      <div className="gallery-comparison">
+        <div className="gallery-comparison-frame">
+          <img
+            className="comparison-image comparison-before"
+            src="/images/gallery/before.png"
+            alt="Before haircut"
+            loading="lazy"
+            decoding="async"
+          />
+          <div
+            className="comparison-after"
+            style={{ clipPath: `inset(0 0 0 ${comparisonPosition}%)` }}
+            aria-hidden="true"
+          >
+            <img
+              className="comparison-image"
+              src="/images/gallery/after.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div
+            className="comparison-divider"
+            style={{ left: `${comparisonPosition}%` }}
+            aria-hidden="true"
+          >
+            <span className="comparison-handle">
+              <span>‹</span>
+              <span>›</span>
+            </span>
+          </div>
+          <input
+            className="comparison-range"
+            type="range"
+            min="0"
+            max="100"
+            value={comparisonPosition}
+            onChange={(event) => setComparisonPosition(Number(event.target.value))}
+            aria-label="Compare before and after haircut images"
+          />
+          <span className="comparison-label comparison-label-before">Before</span>
+          <span className="comparison-label comparison-label-after">After</span>
+        </div>
+        <div className="gallery-caption">
+          <span>The transformation</span>
+          <span className="gallery-label">Before &amp; after</span>
+        </div>
       </div>
       <div className="gallery-grid">
         {galleryItems.map((item, index) => (

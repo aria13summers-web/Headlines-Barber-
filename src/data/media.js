@@ -8,23 +8,30 @@ export const heroMedia = {
 export const galleryItems = [
   {
     type: 'image',
-    src: '/images/barber-detail.jpg',
-    alt: 'Illustrative close-up of a barber working; replace with a Headlines Barber photo.',
+    src: '/images/gallery/the-detail.png',
+    alt: 'Close-up detail of Headlines Barber.',
     caption: 'The detail',
     label: 'Editorial image',
   },
   {
     type: 'image',
-    src: '/images/barber-chair.jpg',
-    alt: 'Illustrative barber chair; replace with a Headlines Barber interior photo.',
+    src: '/images/gallery/the-space.png',
+    alt: 'Inside the Headlines Barber space.',
     caption: 'The space',
     label: 'Editorial image',
   },
   {
     type: 'image',
-    src: '/images/barber-session.jpg',
-    alt: 'Illustrative haircut in progress; replace with a Headlines Barber photo.',
-    caption: 'The craft',
+    src: '/images/gallery/barb-cut.png',
+    alt: 'Barber haircut at Headlines Barber.',
+    caption: 'The cut',
+    label: 'Editorial image',
+  },
+  {
+    type: 'image',
+    src: '/images/gallery/barber.png',
+    alt: 'Barber at work at Headlines Barber.',
+    caption: 'The barber',
     label: 'Editorial image',
   },
 ];
