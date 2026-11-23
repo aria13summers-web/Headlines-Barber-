@@ -1,4 +1,3 @@
-import { business } from '../data/business.js';
 import { heroMedia } from '../data/media.js';
 import Icon from './Icon.jsx';
 
@@ -40,7 +39,6 @@ export default function Hero() {
             LOOK GOOD<span className="hero-comma">,</span>
             <span className="hero-title-second">MAKE <em>HEADLINES.</em></span>
           </h1>
-          <p className="hero-tagline">{business.tagline}</p>
           <p className="hero-description">
             Sharp cuts, considered grooming and a comfortable chair. Leave looking like you mean it.
           </p>
