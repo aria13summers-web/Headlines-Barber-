@@ -798,7 +798,7 @@ dialog:focus-visible {
 }
 
 .gallery-comparison {
-  width: min(100%, 440px);
+  width: min(100%, 720px);
   margin: 0 auto 54px;
 }
 
