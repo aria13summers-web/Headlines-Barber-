@@ -369,14 +369,6 @@ dialog:focus-visible {
   font-style: normal;
 }
 
-.hero-tagline {
-  margin: 25px 0 0;
-  color: var(--gold-bright);
-  font-size: clamp(1.02rem, 1.7vw, 1.32rem);
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
 .hero-description {
   max-width: 45ch;
   margin: 16px 0 0;
@@ -1673,10 +1665,6 @@ body.custom-cursor-enabled textarea {
 
   .hero-title-second {
     white-space: normal;
-  }
-
-  .hero-tagline {
-    margin-top: 20px;
   }
 
   .hero-description {
